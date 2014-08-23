@@ -1,7 +1,11 @@
 Markitapp::Application.routes.draw do
   
   devise_for :users
-  resources :users, only: [:show]
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
   root :to => "static_pages#welcome"
 
   # The priority is based upon order of creation: first created -> highest priority.

@@ -1,1 +1,9 @@
 <head>Welcome User</head>
+<% if user_signed_in? %>
+	<section>
+		<%= render 'partials/user_info' %>
+	</section>
+	<section>
+		<%= render 'partials/stats' %>
+	</section>
+<% end %>

@@ -10,6 +10,8 @@ gem 'pg'
 #rspec for testing
 gem 'rspec-rails'
 
+# make sample users with semi-realistic names and emails
+gem 'faker'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
 
