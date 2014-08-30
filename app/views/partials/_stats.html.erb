@@ -4,7 +4,7 @@
 		<strong><%= @user.followed_users.count %></strong>
 		following
 	</a>&nbsp;
-	<a href="<%= following_user_path(@user) %>">
+	<a href="<%= followers_user_path(@user) %>">
 		<strong><%= @user.followers.count %></strong>
 		followers
 	</a>
